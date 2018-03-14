@@ -11,21 +11,22 @@
 		</a>
 		<div class="row">
 			<div class="search">
-				<form id="product-search-form" action="" method="">
-					<input type="text" name="search" placeholder="Поиск по сайту" />
-					<button type="submit" name="search">Поиск</button>
+				<form id="search-form" action="https://echo.htmlacademy.ru" method="get">
+					<label for="search-input" class="visually-hidden">Поиск по сайту</label>
+					<input type="text" id="search-input" name="search" placeholder="Поиск по сайту" />
+					<button type="submit" class="visually-hidden">Найти</button>
 				</form>
 			</div>
-			<ul class="user-area">
-				<!-- <li class="logged-in"><a href="#">Валентин Петухов</a></li> -->
-				<li class="login-link"><a href="#">Войти</a></li>
-				<li class="compare"><a href="#">Сравнить</a></li>
-				<li class="cart"><a href="#">Корзина</a></li>
+			<ul class="user-area" aria-label="Меню пользователя">
+				<!-- <li class="logged-in"><a href="profile.html">Валентин Петухов</a></li> -->
+				<li class="login-link"><a href="login.html">Войти</a></li>
+				<li class="compare"><a href="compare.html">Сравнить</a></li>
+				<li class="cart"><a href="cart.html">Корзина</a></li>
 			</ul>
 		</div>
 
 		<div class="row">
-			<nav class="catalog-navigation site-navigation">
+			<nav class="catalog-navigation site-navigation" aria-label="Навигация по сайту">
 				<ul>
 					<li><a href="catalog.html">Каталог товаров</a>
 						<ul>
@@ -39,7 +40,7 @@
 					</li>
 				</ul>
 			</nav>
-			<nav class="secondary-navigation site-navigation">
+			<nav class="secondary-navigation site-navigation" aria-label="Навигация по сайту">
 				<ul>
 					<li><a href="delivery.html">Доставка</a></li>
 					<li><a href="guarantee.html">Гарантия</a></li>
@@ -118,10 +119,10 @@
 					</div>
 				</li>
 			</ul>
-			<ul class="slider-nav">
-				<li class="active"><span>1</span></li>
-				<li><span>2</span></li>
-				<li><span>3</span></li>
+			<ul class="slider-nav" aria-label="Навигация по слайдеру популярных гаджетов">
+				<li class="active"><button type="button" class="slider-control" aria-label="Слайд">1</button></li>
+				<li><button type="button" class="slider-control" aria-label="Слайд">2</button></li>
+				<li><button type="button" class="slider-control" aria-label="Слайд">3</button></li>
 			</ul>
 		</section>
 		
@@ -153,13 +154,13 @@
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="tabs" id="">
 				<li class="tab-item">
-					<a class="tab-link active" id="delivery">Доставка</a>
+					<a href="#delivery" class="tab-link active" id="delivery-tab">Доставка</a>
 				</li>
 				<li class="tab-item">
-					<a class="tab-link" id="guarantee">Гарантия</a>
+					<a href="#guarantee" class="tab-link" id="guarantee-tab">Гарантия</a>
 				</li>
 				<li class="tab-item">
-					<a class="tab-link" id="credit">Кредит</a>
+					<a href="#credit" class="tab-link" id="credit-tab">Кредит</a>
 				</li>
 			</ul>
 			<div class="tab-content" id="">
@@ -193,7 +194,7 @@
 			<h2>О нас</h2>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-			<ul class="delivery-companies-list">
+			<ul class="delivery-companies">
 				<li>Деловые Линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
@@ -205,7 +206,7 @@
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<div class="map">
-				<a href="#"><img src="images/map.jpg" width="560" height="222" alt="Карта" /></a>
+				<a href="#"><img src="images/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, Москва" /></a>
 			</div>
 			<a href="contact-us.html" class="button">Напишите нам</a>
 		</section>
@@ -214,14 +215,14 @@
 		<a class="logo">
 			<img src="images/device-logo-yellow.svg" width="163" height="36" alt="Логотип магазина «Девайс»" />
 		</a>
-		<ul class="user-area">
-			<!-- <li class="logged-in"><a href="#">Валентин Петухов</a></li> -->
-			<li class="login-link"><a href="#">Войти</a></li>
-			<li class="compare"><a href="#">Сравнить</a></li>
-			<li class="cart"><a href="#">Корзина</a></li>
+		<ul class="user-area" aria-label="Меню пользователя">
+			<!-- <li class="logged-in"><a href="profile.html">Валентин Петухов</a></li> -->
+			<li class="login-link"><a href="login.html">Войти</a></li>
+			<li class="compare"><a href="compare.html">Сравнить</a></li>
+			<li class="cart"><a href="cart.html">Корзина</a></li>
 		</ul>
 		<p class="contacts">г. Москва, ул. Строителей, 15</p>
-		<nav class="secondary-navigation site-navigation">
+		<nav class="secondary-navigation site-navigation" aria-label="Навигация по сайту">
 			<ul>
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="guarantee.html">Гарантия</a></li>
@@ -229,24 +230,38 @@
 			</ul>
 		</nav>
 		<p class="phone">Тел.: +7 (495) 495-95-95</p>
-		<ul class="social">
-			<li class="social-btn fb"><a href="facebook.com">Фейсбук</a></li>
-			<li class="social-btn instagram"><a href="instagram.com">Инстаграм</a></li>
-			<li class="social-btn twitter"><a href="twitter.com">Твиттер</a></li>
+		<ul class="social" aria-label="Мы в социальных сетях">
+			<li class="social-btn fb"><a href="https://facebook.com">Фейсбук</a></li>
+			<li class="social-btn instagram"><a href="https://instagram.com">Инстаграм</a></li>
+			<li class="social-btn twitter"><a href="https://twitter.com">Твиттер</a></li>
 		</ul>
 		<p class="copyright"><a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy" target="_blank"><img src="images/html-academy.svg" width="27" height="35" alt="HTML Academy"></a></p>
 	</footer>
 
 	<section class="modal modal-contact">
 		<h2 class="visually-hidden">Напишите нам</h2>
-		<!-- Форма -->
-		<span class="modal-close">х</span>
+		<form class="contact" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="contact-name">Ваше имя:</label>
+				<input id="contact-name" type="text" name="name" placeholder="Имя Фамилия" />
+			</p>
+			<p>
+				<label for="contact-email">Ваш e-mail:</label>
+				<input id="contact-email" type="email" name="email" placeholder="email@example.com" />
+			</p>
+			<p>
+				<label for="contact-msg">Текст письма:</label>
+				<textarea id="contact-msg" name="msg" rows="10" cols="50" placeholder="В свободной форме"></textarea>
+			</p>
+			<button type="submit" class="button">Отправить</button>
+		</form>
+		<button type="button" class="modal-close">Закрыть</button>
 	</section>
 
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Наш адрес</h2>
-		<!-- Карта -->
-		<span class="modal-close">х</span>
+		<img src="images/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва" />
+		<button type="button" class="modal-close">Закрыть</button>
 	</section>
 </body>
 </html>

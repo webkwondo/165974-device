@@ -3,15 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Каталог магазина полезных гаджетов «Девайс»</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
 </head>
-<body>
-
+<body class="inner-page">
 	<header class="main-header">
 		<a href="index.html" class="logo">
 			<img src="images/device-logo.svg" width="164" height="36" alt="Логотип магазина «Девайс»" />
 		</a>
 		<div class="search">
-			<form id="search-form" action="https://echo.htmlacademy.ru" method="get">
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 				<label for="search-input" class="visually-hidden">Поиск по сайту</label>
 				<input type="text" id="search-input" name="search" placeholder="Поиск по сайту" />
 				<button type="submit" class="visually-hidden">Найти</button>
@@ -70,7 +72,7 @@
 							<label for="filter-black">Черный</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" id="filter-white" class="visually-hidden filter-input filter-input-checkbox" name="white" />
+							<input type="checkbox" id="filter-white" class="visually-hidden filter-input filter-input-checkbox" name="white" disabled />
 							<label for="filter-white">Белый</label>
 						</li>
 						<li class="filter-option">
@@ -130,7 +132,7 @@
 					</div>
 					<div class="product-item-overlay hidden">
 						<a href="#" class="button">В корзину</a>
-						<a href="#">Добавить к сравнению</a>						
+						<a href="#" class="add">Добавить к сравнению</a>						
 					</div>
 				</li>
 				<li class="product-item">
@@ -143,7 +145,7 @@
 					</div>
 					<div class="product-item-overlay hidden">
 						<a href="#" class="button">В корзину</a>
-						<a href="#">Добавить к сравнению</a>						
+						<a href="#" class="add">Добавить к сравнению</a>						
 					</div>
 				</li>
 				<li class="product-item">
@@ -156,7 +158,7 @@
 					</div>
 					<div class="product-item-overlay hidden">
 						<a href="#" class="button">В корзину</a>
-						<a href="#">Добавить к сравнению</a>						
+						<a href="#" class="add">Добавить к сравнению</a>						
 					</div>
 				</li>
 				<li class="product-item">
@@ -169,17 +171,17 @@
 					</div>
 					<div class="product-item-overlay hidden">
 						<a href="#" class="button">В корзину</a>
-						<a href="#">Добавить к сравнению</a>						
+						<a href="#" class="add">Добавить к сравнению</a>						
 					</div>
 				</li>
 			</ul>
 			<ul class="pagination">
-				<li><a class="page-number prev">Назад</a></li>
-				<li><a class="page-number current">1</a></li>
-				<li><a href="#" class="page-number">2</a></li>
-				<li><a href="#" class="page-number">3</a></li>
-				<li><a href="#" class="page-number">4</a></li>
-				<li><a href="#" class="page-number next">Вперед</a></li>
+				<li><a class="pagination-number prev">Назад</a></li>
+				<li><a class="pagination-number current">1</a></li>
+				<li><a href="#" class="pagination-number">2</a></li>
+				<li><a href="#" class="pagination-number">3</a></li>
+				<li><a href="#" class="pagination-number">4</a></li>
+				<li><a href="#" class="pagination-number next">Вперед</a></li>
 			</ul>
 		</section>
 	</main>
@@ -219,7 +221,7 @@
 			</p>
 			<p>
 				<label for="contact-email">Ваш e-mail:</label>
-				<input id="contact-email" type="email" name="email" placeholder="email@example.com" />
+				<input id="contact-email" type="email" name="email" placeholder="email@example.com" class="nonvalid" />
 			</p>
 			<p>
 				<label for="contact-msg">Текст письма:</label>

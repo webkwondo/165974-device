@@ -2,14 +2,14 @@
 	font-family: 'gilroylight';
 	src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
 		 url('../fonts/gilroylight-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroyextrabold';
 	src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
 		 url('../fonts/gilroyextrabold-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 900;
 	font-style: normal;
 }
 
@@ -1746,6 +1746,8 @@ a.login-link.logged-in {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 }

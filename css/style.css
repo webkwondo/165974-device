@@ -249,7 +249,7 @@ img {
 }
 .secondary-navigation li:last-child a {
 	padding-right: 0;
-	margin-right: -3px;
+	margin-right: -.2em;
 }
 .toggle-submenu {
 	position: relative;
@@ -474,27 +474,27 @@ a.login-link.logged-in {
 	line-height: 138px;
 	color: #ffffff;
 }
-#slide-1 .product-info-content::before {
+.slide-1 .product-info-content::before {
 	content: "01";
 }
-#slide-2 .product-info-content::before {
+.slide-2 .product-info-content::before {
 	content: "02";
 	right: 72px;
 }
-#slide-3 .product-info-content::before {
+.slide-3 .product-info-content::before {
 	content: "03";
 	right: 74px;
 }
-#slide-2 .product-image img {
+.slide-2 .product-image img {
 	position: relative;
 	left: -2px;
 }
-#slide-2 .product-image img {
+.slide-2 .product-image img {
 	position: relative;
 	top: 14px;
 	left: 9px;
 }
-#slide-3 .product-image img {
+.slide-3 .product-image img {
 	position: relative;
 	top: 67px;
 	left: 14px;
@@ -656,7 +656,7 @@ a.login-link.logged-in {
 .tab-pane:not(.active) {
    display: none;
 }
-.tab-content .tab-pane#delivery::after {
+.tab-content .tab-pane.delivery::after {
 	content: "";
 	position: absolute;
 	top: 11px;
@@ -665,7 +665,7 @@ a.login-link.logged-in {
 	height: 164px;
 	background: url("../images/delivery.svg") 0 0 no-repeat;
 }
-.tab-content .tab-pane#guarantee::after {
+.tab-content .tab-pane.guarantee::after {
 	content: "";
 	position: absolute;
 	top: -13px;
@@ -674,7 +674,7 @@ a.login-link.logged-in {
 	height: 194px;
 	background: url("../images/warranty.svg") 0 0 no-repeat;
 }
-.tab-content .tab-pane#credit::after {
+.tab-content .tab-pane.credit::after {
 	content: "";
 	position: absolute;
 	top: -13px;
@@ -784,12 +784,13 @@ a.login-link.logged-in {
 }
 .about-us p,
 .contact p {
+	letter-spacing: normal;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 30px;
 }
 .about-us p {
-	padding-right: 75px;
+	padding-right: 85px;
 }
 .contact p {
 	margin-bottom: 39px;
@@ -2186,6 +2187,7 @@ aside {
 .main-footer .phone {
 	-ms-flex-preferred-size: 260px;
 	    flex-basis: 260px;
+	letter-spacing: normal;
 	padding: 0;
 	margin: 0;
 }
